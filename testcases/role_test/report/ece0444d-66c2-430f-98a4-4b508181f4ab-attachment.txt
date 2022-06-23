@@ -1,0 +1,18 @@
+[2022-06-23 17:54:22,195][mysql_operate.py 53][INFO]: 操作MySQL出现错误，错误原因：(1146, "Table 'test.role' doesn't exist")
+[2022-06-23 17:54:22,216][conftest.py 21][INFO]: 执行前置SQL：DELETE from role WHERE role_name='test001'
+[2022-06-23 17:54:22,222][test_01_role.py 38][INFO]: *************** 开始执行用例test_addRole新增角色第1组数据 ***************
+[2022-06-23 17:54:22,232][rest_client.py 51][INFO]: 接口请求地址 ==>> https://enesoon-saas-back-test.cn:8397/enesoon/role/v1.0/role/addRole
+[2022-06-23 17:54:22,239][rest_client.py 52][INFO]: 接口请求方式 ==>> POST
+[2022-06-23 17:54:22,243][rest_client.py 54][INFO]: 接口请求头 ==>> {
+    "Content-Type": "application/json",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTYwNjQ0NjMxMzEsInBheWxvYWQiOiJ7XCJlbXBsb3llZUlkXCI6MTAwMDEzOCxcImxldmVsXCI6MixcInRva2VuXCI6bnVsbCxcImlzRW5lXCI6MCxcImVtcGxveWVlTmFtZVwiOlwiZGp4QGVuZXNvb24ub3JnLmNuXCJ9In0.Y9Xvpq41iB8O_7xacDM1YUuSLbqErJG759ZG72DIsQk"
+}
+[2022-06-23 17:54:22,247][rest_client.py 55][INFO]: 接口请求 params 参数 ==>> null
+[2022-06-23 17:54:22,249][rest_client.py 56][INFO]: 接口请求体 data 参数 ==>> null
+[2022-06-23 17:54:22,253][rest_client.py 57][INFO]: 接口请求体 json 参数 ==>> {
+    "roleName": "test100",
+    "desc": "测试"
+}
+[2022-06-23 17:54:22,256][rest_client.py 58][INFO]: 接口上传附件 files 参数 ==>> None
+[2022-06-23 17:54:22,259][rest_client.py 59][INFO]: 接口 cookies 参数 ==>> null
+[2022-06-23 17:54:22,449][role.py 50][INFO]: 新增角色 ==>> 返回结果 ==>> {"code":1,"message":"角色名称已存在"}

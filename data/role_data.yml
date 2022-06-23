@@ -1,0 +1,16 @@
+test_queryRole:
+  #rolename,code,message
+  #角色名、结果、返回码、返回消息
+  - ["超级管理员",True,0,"查询成功"]
+  - ["运维",True,0,"查询成功"]
+  - ["超级管理员100",True,0,"查询成功"]
+
+
+test_addRole:
+  #rolename,desc,code,message
+  #角色名、、描述、返回码、返回消息
+  - ["test100","测试",True,0,"添加成功"]#不存在的角色
+ # - ["超级管理员","测试",True,1,"角色名称已存在"]#已存在的角色
+
+init_sql:
+  delete_role: "DELETE from role WHERE role_name='test001'"
